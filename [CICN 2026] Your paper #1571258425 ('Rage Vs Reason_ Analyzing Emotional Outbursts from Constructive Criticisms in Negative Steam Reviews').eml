@@ -1,0 +1,292 @@
+Received: from MA1PPF6DAC63D15.INDPRD01.PROD.OUTLOOK.COM (2603:1096:a04::317)
+ by MAUPR01MB11854.INDPRD01.PROD.OUTLOOK.COM with HTTPS; Fri, 3 Apr 2026
+ 05:20:55 +0000
+Received: from MA5P287CA0065.INDP287.PROD.OUTLOOK.COM (2603:1096:a01:1b3::7)
+ by MA1PPF6DAC63D15.INDPRD01.PROD.OUTLOOK.COM (2603:1096:a04::317) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.9769.18; Fri, 3 Apr
+ 2026 05:20:53 +0000
+Received: from MA1PEPF000072B0.INDPRD01.PROD.OUTLOOK.COM
+ (2603:1096:a01:1b3:cafe::a1) by MA5P287CA0065.outlook.office365.com
+ (2603:1096:a01:1b3::7) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.20.9769.21 via Frontend Transport; Fri,
+ 3 Apr 2026 05:20:53 +0000
+Authentication-Results: spf=pass (sender IP is 54.240.9.115)
+ smtp.mailfrom=mail.edas.info; dkim=pass (signature was verified)
+ header.d=edas.info;dkim=pass (signature was verified)
+ header.d=amazonses.com;dmarc=pass action=none
+ header.from=edas.info;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of mail.edas.info
+ designates 54.240.9.115 as permitted sender) receiver=protection.outlook.com;
+ client-ip=54.240.9.115; helo=a9-115.smtp-out.amazonses.com; pr=C
+Received: from a9-115.smtp-out.amazonses.com (54.240.9.115) by
+ MA1PEPF000072B0.mail.protection.outlook.com (10.167.242.20) with Microsoft
+ SMTP Server (version=TLS1_3, cipher=TLS_AES_256_GCM_SHA384) id 15.20.9769.17
+ via Frontend Transport; Fri, 3 Apr 2026 05:20:51 +0000
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=bfnqktgm4az2tapp5krxbxn7fq5larkf; d=edas.info; t=1775193648;
+	h=MIME-Version:Sender:From:To:Reply-to:Message-ID:Subject:Date:Content-Type:Content-Transfer-Encoding;
+	bh=q+kyfA2y+4Cjzr4+73iN+BTrpTEAbRoc5lU3kpD5U3A=;
+	b=NeL4z5c1HpsbNbqlbPrnC5XFP3/BorjZFDGxwbH9REfqo9p0nCFoUi/JABhQuuhU
+	Vv03YCi0kR+DQR6xXUXERniHonvTI5P8gHO101aVGTsEy4NKK8/fqbl2c9RHIMxnHBG
+	yyXXc8gkckh9/cdGckUtFWuPbyCzDMcr+VCHIQh4=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=224i4yxa5dv7c2xz3womw6peuasteono; d=amazonses.com; t=1775193648;
+	h=MIME-Version:Sender:From:To:Reply-to:Message-ID:Subject:Date:Content-Type:Content-Transfer-Encoding:Feedback-ID;
+	bh=q+kyfA2y+4Cjzr4+73iN+BTrpTEAbRoc5lU3kpD5U3A=;
+	b=epJ96agShFwyhGQfwwmPWGcFwcF6aacacvx8uX/0//b0eOoTckXWcECD0dgHk/V0
+	EDk2x0IndCBfi/8b4bi/Yhx6uKqPIHzklAQ3dgW46vqkB8omu/ftFw3XWZlZHAchudU
+	nQVMi6G1dAlHWGImwpIKm4iCNRHSzGNlhVqTNgpQ=
+Sender: EDAS Conference Manager <help@edas.info>
+From: gstomar=ieee.org@edas.info
+To: Diksha Anand <ce4112023@niamt.ac.in>, 
+	Chetan Mudlapur <chetan.240201008@iiitbh.ac.in>, 
+	Om Prakash Singh <opsingh.cse@iiitbh.ac.in>
+Reply-to: Geetam Singh Tomar <gstomar@ieee.org>
+Message-ID: <0100019d51c96c3a-2b7523e0-b446-4e1f-a8b4-4638b57d5e0a-000000@email.amazonses.com>
+Subject: [CICN 2026] Your paper #1571258425 ('Rage Vs Reason: Analyzing Emotional
+ Outbursts from Constructive Criticisms in Negative Steam Reviews')
+Date: Fri, 3 Apr 2026 05:20:48 +0000
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+Feedback-ID: ::1.us-east-1.IiBJgIKr6aPfrJVfjq+gGO4QbgoF+/tazJBtqAlizOQ=:AmazonSES
+X-SES-Outgoing: 2026.04.03-54.240.9.115
+Return-Path: 0100019d51c96c3a-2b7523e0-b446-4e1f-a8b4-4638b57d5e0a-000000@mail.edas.info
+X-MS-Exchange-Organization-ExpirationStartTime: 03 Apr 2026 05:20:52.5116
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 19e4b2ad-5ba2-4545-22f9-08de9140c65d
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 9c5b33cf-83bc-41aa-9c40-f87c91080491:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: MA1PEPF000072B0:EE_|MA1PPF6DAC63D15:EE_|MAUPR01MB11854:EE_
+X-MS-Exchange-Organization-AuthSource: MA1PEPF000072B0.INDPRD01.PROD.OUTLOOK.COM
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 19e4b2ad-5ba2-4545-22f9-08de9140c65d
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:0;ARA:13230040|12012899012|32142699015|3072899012|2092899012|56012099003|19002099003|16102099003;
+X-Forefront-Antispam-Report: CIP:54.240.9.115;CTRY:US;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:a9-115.smtp-out.amazonses.com;PTR:a9-115.smtp-out.amazonses.com;CAT:NONE;SFS:(13230040)(12012899012)(32142699015)(3072899012)(2092899012)(56012099003)(19002099003)(16102099003);DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 03 Apr 2026 05:20:51.1594
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 19e4b2ad-5ba2-4545-22f9-08de9140c65d
+X-MS-Exchange-CrossTenant-Id: 9c5b33cf-83bc-41aa-9c40-f87c91080491
+X-MS-Exchange-CrossTenant-AuthSource: MA1PEPF000072B0.INDPRD01.PROD.OUTLOOK.COM
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: MA1PPF6DAC63D15
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:04.0878183
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.9769.018
+X-Message-Flag: Flag for follow up
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910005)(944506478)(944626604)(920097)(930201)(20251009189)(140003);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?cFF5Z2M1c1pUYjh2c1RzWFFWdlFPNHFrTTNZeFhjSjd6OFQwT25ublBOeUJL?=
+ =?utf-8?B?ZVh2VmVFMVdnVFRjajBxVVM4MGIxQUpNYnRicm5aYk9Zd0xGaHFrc09vS2x0?=
+ =?utf-8?B?NDBzMWw2MFg2ZlQ4bHRIWXBYUEd4TVQxcDErZm4zZVliRzhBcFlWME92d01a?=
+ =?utf-8?B?cU4zSVp3b0Vycko1ZVFjUWhIcmJva2g2bUhYdEJoY3RGdGpUdEVJQXhOMXJX?=
+ =?utf-8?B?SDNkdEYzSElHTlFIUHdzRUNhbzZ0TmFFWjJobU02SjREdHBNbWpEc3R4a2lP?=
+ =?utf-8?B?cDdzTFh3UnlJZEtkY1Y3cHR0a0pVbS93N0VuN1VxeEF3SURsdUs2eEplT1ZV?=
+ =?utf-8?B?SS9qdkJwMEEvSjU3Y3BaUE1oY2Y3WjZJdzU2T1BKaFFJSlYzcFhtdFlzZGJ6?=
+ =?utf-8?B?L2dXbHVHVUp5TzJZbjNEUzBxMUd4b1JOcFZUcmF6bGk0YmVDbDQvRTE1UjRr?=
+ =?utf-8?B?eEUxb0cvTEtyTnVFME54cXJxREZhWUQ2VkJUUGNBT2xYNzc0b1FQRmtWM2Iz?=
+ =?utf-8?B?Q25YbVVhNmdKTHJuWTRDMWxsbG42ZjRGQXN0SGZJSTc4R2JLYW9MSzJ4NkxI?=
+ =?utf-8?B?bEdCMmJDUHVtazlDSmFza2V2Ujk3UnpWdmRtaVRneFNLZlN2K29KL3JOWFow?=
+ =?utf-8?B?K1lkOGJwN0JPL2hOQlozRnZxTEFlUWhwSkdQS3I4YlMzS0xqeGI4OWpjaHNF?=
+ =?utf-8?B?M1I2cEhOYTY0ZmJpZWtudEM5OFBiUENZa0VEVkNNQWNTT2ZXUDRMNjIwYXlJ?=
+ =?utf-8?B?SmpxdUY0eGd0WUR4WXZmVko4R1hEYnYxMGowWHQvZ2U0WlMwVGNFdytZME1n?=
+ =?utf-8?B?ald1R3M2ajhLK0d0Z2JINUthSjcwL1AwUTJaeExMQUU4bkpFQWxFb0RITkFV?=
+ =?utf-8?B?V1VQNklKcHhvb3R2U2pNTVFnMGJvTzkySjN4ZmZvVmd0ZU0vVE9Tby9zSUQ2?=
+ =?utf-8?B?cElnQ1Q3RTFYR0Zxbk5UQ2loTWhYNDMxSnlTTVQvRHNrajVmcFlCOHJ3QTZJ?=
+ =?utf-8?B?Tktacmg1OGhDNWZKMGFqbWcyYVRGMXpvd0E4ZllUTmJ2cU5OTlA1WE1qYkNu?=
+ =?utf-8?B?YTJwU3lLd3ZwdmR5OGhHL2c1dG84NHp5VEhtMmFyUXEycm9GT2JVUW9oVlNo?=
+ =?utf-8?B?b25tbHNJS21oVW51RFIreTR4THk3RHY5LzNRZDFpaFRIQnBqUktIQUx1SERl?=
+ =?utf-8?B?Ykk2VURIc2VST0oyN3hRYkFVTTdBNkphbzFFcmNDbVl6YjBOajJJSjg4RVNR?=
+ =?utf-8?B?NWdibkFxOVdpNURXNXM3V3VFMENkL3pNUVNmaG5FWTQyMXg2eURsSEhVd0tO?=
+ =?utf-8?B?ZzZkQWt2a1dUQVZNSHhBL3lFRHFGdnc4NE1QTjVtNmRjUisvVjVYNTl1YU9S?=
+ =?utf-8?B?TUxDdE91YXd5NnpjL0NZUkRrYVpPbTZndG9qYlZoQVpPd1JEUWpEcWxCcWhq?=
+ =?utf-8?B?dTAreVFtMjB2ZStzam5mU0VvQkQyclZwQyt3UTFqenQ4RnhMYklxaWdhT0ZC?=
+ =?utf-8?B?V090WCtMSVp1LzZkVXlRZlJDVEE1cTMvTTNobUhrWTk5MGg5WTNWK2hhWENR?=
+ =?utf-8?B?c2F1d3hnUDBCbStnT1AwVzVwY2Z3N3pQK0s5cEFKdmdXOGdnblFjcFM4OENw?=
+ =?utf-8?B?VWZDRkZXMzdjYXN1R0dEWmxBZ3pCenJDQlgxVWNiOWVoWkxpUU9FWm5qL1RY?=
+ =?utf-8?B?R2ovTGpGeW1YS3RNSE5LTXpYMmJZWGh6enNwVXJMSDc0VEhVandTNmxvSnlp?=
+ =?utf-8?B?VG1ta0lKZjdYdHpyR0JpYVYvdFdCN1VLS1UvdjBEOXFqU3VuRFlwMkdGbjZ1?=
+ =?utf-8?B?YmI3ODNzSWlXcTh3ODYyM3VIenBXaU42dTZZU004UGFBOFpkM1NIUndCMWpF?=
+ =?utf-8?B?OTFnb0FXWmRwRUNON3gxVjgrMjY1MmUwRHVXYWNka3BkQ2hrZ3F2VHR4VFQw?=
+ =?utf-8?B?Vk82WGFCK1JQcmxNa0ptcGI1bEs0OCtCTDJPcmpWTEZWM2hyTWtOcStEVFBC?=
+ =?utf-8?B?cXpFMWRpZUhoMnhrdkhvbGcwYkJZVjJGazdXTWdZYThpNFI1ZmJxS0RPdDEr?=
+ =?utf-8?B?NWwzY05OS1pSVzg0MFRGdjd1VTZhMGkrMmVmZDdUSEdmZGdoQ0JFanpRN2N1?=
+ =?utf-8?B?WEh3Y0U1bzhsdnd6VDQyYnZXUVF4NjNLVGM1a2NNamJscjVOY3dEaE5iNDRI?=
+ =?utf-8?B?azVZVnFKZUMvWTBiai9zQkl2a040RDFKNVF2ZFFtOW5wZWM4OUN6V2U4QW5M?=
+ =?utf-8?B?M3hHUnNhZGFxMlNkRGg3RUJyNkFjcy9zS1pIUmhpeittWFFKRTFlZXpuYnA0?=
+ =?utf-8?B?UE9GN0dCMmRUQUF0amVqYnV3eTJlK0ZydFlVdSt0TTlNZmhWRVBQdFNwbjNi?=
+ =?utf-8?B?QXlKT1VQVnpHT0pDcFlCNm5qZW1IOURrck9ENEtaVmhNN1FUYTAydWcwYXFJ?=
+ =?utf-8?B?bG9VSFg0MkxQdW1mb29BSjNuWGtvd1M2QkRpREVNM3JGZy9tVDhORlhXeEU5?=
+ =?utf-8?B?M2k5Q1MzSFdyejB5TmVoNXZIL1ZraTBMc0cxQ3NaaS80NVFQQytMRk1MVjNT?=
+ =?utf-8?B?SHNyeVp6cUcyTVlnb0h4OFFaODZBb2tOY1dua3lkMEhZeHNJM0ZBUW0xRnpp?=
+ =?utf-8?B?cWo5UVR4blFVQmZzK3ZlQmJYWWhvc0pKM1JqVGRnY0xsYlRlNzYxRGgzaW9o?=
+ =?utf-8?B?TWtkZWIvVFZtMm1GYXpzdGpLWjlBWmhDN2NFZ3BEN1p4VVpSMzlYWGl3M1BM?=
+ =?utf-8?B?Qnd6QUliR3RzelNRTmRYT3JPUVdNTE5LU1N1Y3MwWE85alVqZkVYWVQwL1hw?=
+ =?utf-8?B?OHNYamlKYzNmWXRHY01DYkhkK3U4Y1JlYXMvL2t3THBNcVczSnNZSDl1c1hQ?=
+ =?utf-8?B?aDl3UTBXRk1hbUlYcW1uQnhZTzNLQUlYdUwvOVB6Y3J1bzNSdyt6cHdFdHJS?=
+ =?utf-8?B?UDU1WTdSTitPWll2SHhWdGNSVFVWTGJzVkFaQUhKejVwcUdlVjFpVm5FUHBF?=
+ =?utf-8?B?ZjB6c0J4eWJXaFhGbHNmMFVIdWJuVmlPTEZFVnBwK3BiVUU3bFZ3QzlpbFIz?=
+ =?utf-8?B?TXRhbDFHTTRxTnFZOUVuUXppWmxWSDc2d0JHZnpGd0wzWjZWNUJYK1ZLSXNV?=
+ =?utf-8?B?aldxTTE0YW43SGl0ZXg5akoybzN0Z25Hc0dHTmhTcCt6QktSN1pkNSt1Tko2?=
+ =?utf-8?B?YTVzblFYbnVHbXUzS0Y2OE1YUkpSNVRzcDJqRC9yZHhYL3JUc2wzNDVMVjRX?=
+ =?utf-8?B?NHBidnF5SGw1Nm1vQW45ZHlrdTJ4cDFQOXBvLzVFVUVsaDg2bUhrTXFrVnlU?=
+ =?utf-8?B?d2doNkorVHJMUFRLRHRiNW5qZW1xOURsZ1FvbTJSU05xN2JiakU5azRMaHpY?=
+ =?utf-8?B?NjJHVXlUd1ppdDJmREVaMkxkVlVURTFXdEljOEZMajh2cHY5WU5mSVB4VjI3?=
+ =?utf-8?B?cFRjbjBpdlJITXhKQWh5YlcvRFNmeUhaOXRTNmpTSU5ycnN6cytJZ3VmZzRh?=
+ =?utf-8?B?WmNPcHhEQnlMQnVQZFRwUllWMVVNV05yeGNsRThzOTRTNGxUNkdxZWVKUXpI?=
+ =?utf-8?B?RFRkT2UzeU04TlZ1M2dCWTRub1phS0xwZDhURmhSbWQrSmhZVDNhOXlrZ2dT?=
+ =?utf-8?B?K0FyZW1SMVhEc1hCVW5MeVJuMzNKenFMNy9tbFZ4czE4VTZrTkZwVTIyZVNm?=
+ =?utf-8?B?TFNpZTVvbnlPWGY3bUYyR3VkR0x0TXFPSVpCVk1QSlBoemVIalFSeFRBWDJU?=
+ =?utf-8?B?ZzZ4OU1SMUxnY3QybThJNDhHcEdPTit2VlZzSCtiWlN5WnBwMXVsRVpLZ0NY?=
+ =?utf-8?B?ZGF3TlgyMUlCUThzQWVTenRIVXRDeDNTUnl2dXdEVWlkSnMxSUFyNTFzSEw4?=
+ =?utf-8?Q?HRRuUqTd4qZMjjFwSsKZsU6B0d64W0Sn2YXflLHJJfW0M?=
+MIME-Version: 1.0
+
+Dear Ms. Diksha Anand:
+             =20
+Congratulations -
+On behalf of organising committee of 2026 IEEE 18th International Conferenc=
+e on Computational Intelligence and Communication Networks (CICN), I am hap=
+py to inform you that, your paper #1571258425, Title: ('Rage Vs Reason: Ana=
+lyzing Emotional Outbursts from Constructive Criticisms in Negative Steam R=
+eviews') has been accepted for Oral Presentation as regular paper with mino=
+r revisions. =20
+    One of the author need to register paper by paying required fee before =
+10 Apr 2026 in case it is not registered the paper will be removed from the=
+ proceedings. You are requested to visit conference website page https://ci=
+cn.in/Registration.html for further instructions. Kindly mention your paper=
+ ID in all communications and payments. Kindly send proof of payment on ema=
+il cicnmir@gmail.com alongwith final paper in word format. the final paper =
+can also be sent within one week after payment to the email. You are also r=
+equested to use proper ieee format available on website for final paper pre=
+paration (specially recheck for page size-US Letter, margin-moderate and co=
+l. Gap 0.63). Paper must be plagiarism free and can be removed at any stage=
+ if it is not meeting guidelines of IEEE.
+The Conference proceedings will be sent for publication to  IEEE Xplore (as=
+ per IEEE terms and conditions), and indexed by scopus, EI Compendex, ISI P=
+roceeding etc provided meets the requirements.=20
+     The conference will be held on June 11-14, 2026 at Women's University.=
+ Manila, Philippenes. Should you have any questions, please feel free to in=
+form us through email.
+
+NOTE: Payment link is enabled for online payment
+
+
+
+The reviews are below or can be found at https://edas.info/showPaper.php?m=
+=3D1571258425.
+
+=3D=3D=3D=3D=3D=3D=3D Review 1 =3D=3D=3D=3D=3D=3D=3D
+
+> *** Contribution: Research Contribution of the paper
+Little significance (2)
+
+> *** Novelty: Rate the Originality & Novelty
+Little Contribution (2)
+
+> *** Detailed Comment: Please justify your recommendation & suggestion for=
+ improvement in technical content or presentation
+
+The paper offers a new, fine=E2=80=91grained approach to analyzing negative=
+ user reviews by splitting them into two distinct sub=E2=80=91classes: rage=
+ and reason. Most existing sentiment analysis research works treat =E2=80=
+=9Cnegative=E2=80=9D as a single, uniform category.
+A custom annotated dataset for this fine-grained emotional classification w=
+as used. However, the dataset collected during the research was limited to =
+conatin only negative reviews. It is not clear what would be the preformanc=
+e of the method while executing on the dataset containing both positive and=
+ negative reviews. (What would be the performance metrics of the classifica=
+tion with the increased number of classes - better matching real-world scen=
+arios?; Can the selected reviews be uniqely assigned to one the assumed cla=
+sses/subclasses?)
+How the original dataset was split into training, validation and testing su=
+bsets? How the performance of the method was evaluated (which part of the o=
+riginal dataset was used)? ("The labelled dataset was divided into training=
+ and testing sets to evaluate model performance." - no details provided)
+
+RESULTS section - Average word count:
+183.4431137724551
+33.8063872255489
+Is such number accuracy needed (and justified)?
+
+> *** Recommendation: Overall Recommendation
+Weak Accept (3)
+
+=3D=3D=3D=3D=3D=3D=3D Review 2 =3D=3D=3D=3D=3D=3D=3D
+
+> *** Contribution: Research Contribution of the paper
+Significant (3)
+
+> *** Novelty: Rate the Originality & Novelty
+medium contribute (3)
+
+> *** Detailed Comment: Please justify your recommendation & suggestion for=
+ improvement in technical content or presentation
+
+Technical Content Justification:
+The methodology is systematic and well documented, progressing from data re=
+trieval using the Steam API to manual annotation and subsequent model evalu=
+ation. The performance analysis is presented transparently, as the authors =
+acknowledge that a traditional SVM model achieved higher accuracy (82.09%) =
+than the evaluated Large Language Models for this task, largely due to the =
+limited training context available to the LLMs. Additionally, the statistic=
+al analysis of word and character counts strengthens the study=E2=80=99s fi=
+ndings; the observation that =E2=80=9Creason=E2=80=9D reviews tend to be si=
+gnificantly longer than =E2=80=9Crage=E2=80=9D reviews provides meaningful =
+empirical support for the proposed classification logic.
+
+Suggestions for Improvement:
+
+Deep Learning Exploration: The authors note that future work could explore =
+transformer-based architectures such as BERT or RoBERTa, which are better s=
+uited for capturing nuanced linguistic patterns and contextual semantics.
+
+Annotation Bias: While the paper acknowledges potential bias in manual anno=
+tation, the dataset could be strengthened by incorporating multi-annotator =
+labeling and reporting inter-rater reliability metrics (e.g., Cohen=E2=80=
+=99s Kappa).
+
+Handling Sarcasm: Sarcasm is identified as a challenge in distinguishing em=
+otional reactions from constructive criticism. Introducing a dedicated sarc=
+asm-detection component or discussing approaches for sarcasm handling could=
+ improve the robustness of the classification model.
+
+> *** Recommendation: Overall Recommendation
+Accept (4)
+
+=3D=3D=3D=3D=3D=3D=3D Review 3 =3D=3D=3D=3D=3D=3D=3D
+
+> *** Contribution: Research Contribution of the paper
+Significant (3)
+
+> *** Novelty: Rate the Originality & Novelty
+medium contribute (3)
+
+> *** Detailed Comment: Please justify your recommendation & suggestion for=
+ improvement in technical content or presentation
+
+1. The experiment is limited to basic metrics such as accuracy, precision, =
+recall, and F1-score.
+2. Performance comparison is limited, and the improvement over existing .
+3. Literature review is limited and should include more recent related work=
+.=20
+4. Results are limited and lack strong comparison with existing methods.
+5. Figures and tables are not clearly explained in the manuscript.
+6. Presentation and technical writing require improvement.
+7. The manuscript needs a comparison with recent state-of-the-art .
+
+> *** Recommendation: Overall Recommendation
+Weak Reject (2)
+
+
+
+Regards, =20
+TPC Chairs
+CICN 2026
